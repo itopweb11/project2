@@ -310,9 +310,10 @@ transform: scale(1.05);
     height: 354px;
     object-fit: cover;
 }
-.places-card-pic-size-ssm{
+.places-card-pic-size-ssm {
     height: 283px;
     object-fit: cover;
+}
 .places-card-link{
     position: absolute;
     top: 0;
@@ -320,5 +321,118 @@ transform: scale(1.05);
     width: 100%;
     height: 100%;
     z-index: 4;
+}
 
+
+/*Tour*/
+.tours {
+   margin-bottom: 139px;
+}
+.tours-tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+.tour-info {
+    padding-left: 47px;
+}
+.tour-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+.tour-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+.tour-more {
+    font-size: 16px;
+    color: #1170c8;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url("../img/svg/strelka.svg") no-repeat right center;
+}
+.tour-more :hover, .tour-more :focus {
+    opacity: .55;
+}
+
+
+/*Top*/
+.top {
+    margin-bottom: 86px;
+}
+.top-title {
+    margin-bottom: 54px;
+}
+.top-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+.top-card-pic {
+     position: relative;
+    margin-bottom: 45px;
+}
+.top-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+.top-card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 auto 0 0;
+}
+.top-card-likes {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    background: url("../img/svg/p1.svg") no-repeat right;
+    margin-right: 14px;
+}
+.top-card-comments {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    background: url("../img/svg/p2.svg") no-repeat right;
+}
+.top-card-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+
+}
+.top-card-more {
+    width: 118px;
+    padding: 12px 19px;
+    background: #006DFE;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: auto 0 0 0;
+}
+.top-card-more:hover, .top-card-more:focus, .top-card-more:active {
+    background: #1d3d66;
 }
