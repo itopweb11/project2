@@ -48,10 +48,12 @@ img {
 .wrapper{
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .wrapper-full {
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .section-title {
     font-weight: 500;
@@ -111,6 +113,32 @@ img {
 .header-link:hover, .header-link:focus, .header-link:active {
     opacity: .75;
 }
+.header-burger {
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+.burger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+}
+.burger-line_first {
+    top: 0;
+}
+.burger-line_second {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger-line_third {
+    bottom: 0;
+}
+
 
 
 
@@ -485,4 +513,64 @@ transform: scale(1.05);
 }
 .footer-menu-link:hover, .footer-menu-link:focus, .footer-menu-link:active{
     opacity: .75;
+}
+
+
+
+/*Media*/
+@media screen and (max-width: 767px) {
+    .header-burger {
+        display: block;
+    }
+    .header-nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%);
+        transition: .2s a11 linear;
+    }
+    .header-nav-active {
+        transform: translateX(0);
+    }
+
+    .header-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .header-item:last-child {
+        margin-bottom: 0;
+    }
+    .header-link {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .header-nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+    .header-nav-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .header-nav-close-line:first-child {
+        transform: translate(-50%) rotate(45deg);
+    }
+    .header-nav-close-line:last-child {
+        transform: translate(-50%) rotate(-45deg);
+    }
 }
